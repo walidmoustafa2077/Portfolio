@@ -1,0 +1,25 @@
+/* Smooth scroll for in-page anchors */
+html, body { scroll-behavior: smooth; }
+
+/* 3D tilt / parallax styles for project cards */
+.project-card {
+	transform-style: preserve-3d;
+	will-change: transform, box-shadow, filter;
+	transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+	position: relative;
+}
+
+.project-card::after { display: none; }
+
+.project-card:hover { box-shadow: 0 10px 24px -16px rgba(2,6,23,0.22); }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.project-card,
+	.project-card::after,
+	.project-card .aspect-video {
+		transition: none !important;
+		transform: none !important;
+	}
+	.project-card::after { display: none; }
+}
