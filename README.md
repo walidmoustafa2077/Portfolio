@@ -2,6 +2,10 @@
 
 A fast, accessible personal portfolio site. It’s a static site you can host anywhere, built with semantic HTML, modern CSS, and vanilla JavaScript—no frameworks or build step required.
 
+## Preview
+
+![Screenshot of the Portfolio site](docs/assets/images/protfolio.jpg)
+
 ## Features
 
 - Light/Dark theme toggle with persistence (localStorage) and preloaded theme to avoid flash of incorrect theme
@@ -14,7 +18,7 @@ A fast, accessible personal portfolio site. It’s a static site you can host an
 ## Project structure
 
 ```
-src/
+docs/
 	index.html
 	assets/
 		icons/
@@ -127,20 +131,12 @@ This is a static site—host it on any static hosting provider.
 Popular options:
 
 - GitHub Pages
-- Netlify (drag‑and‑drop the `src` folder or connect your repo)
-- Vercel (configure the project root to `src`)
 
 Minimum setup for GitHub Pages:
 
 1. Commit and push the repository.
-2. In repo settings → Pages, select the branch and set the folder to `/src`.
+2. In repo settings → Pages, select the branch and set the folder to `/docs`.
 3. Save to publish.
-
-## Development notes
-
-- No build step or bundler is required.
-- Keep images optimized in `src/assets/images`. SVG icons go in `src/assets/icons`.
-- Organize components and sections semantically in `index.html` for better SEO and a11y.
 
 ## Roadmap / TODO
 
